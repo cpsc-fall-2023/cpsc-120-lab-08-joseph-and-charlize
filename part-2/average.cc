@@ -2,7 +2,6 @@
 // jafriend@csu.fullerton.edu
 // @JaFriend
 // Partners: @charlizemanuel
-//
 
 #include <iostream>
 #include <string>
@@ -25,8 +24,7 @@ int main(int argc, char* argv[]) {
   for (double element : values) {
     sum += element;
   }
-  double number_of_elements = values.size();
-  double average = (1 / number_of_elements) * sum;
+  double average = sum / (argc - 1);
   std::cout << "average = " << average << "\n";
   return 0;
 }
