@@ -14,6 +14,7 @@ int main(int argc, char* argv[]) {
 
   if (argc <= 1) {
     std::cout << "error: you must supply at least one number";
+    return 1;
   }
 
   for (int i = 1; i < argc; i++) {
